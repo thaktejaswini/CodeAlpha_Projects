@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>✨ Modern Image Gallery</h1>
+<input id="search" placeholder="Search images...">
+<div class="filters">
+<button class="active" data-filter="all">All</button>
+<button data-filter="nature">Nature</button>
+<button data-filter="city">City</button>
+<button data-filter="animal">Animal</button>
+</div>
+</header>
+<main id="gallery">
+<div class="card" data-category="nature"><img src="https://picsum.photos/400/300?random=1"><span>Nature</span></div>
+<div class="card" data-category="city"><img src="https://picsum.photos/400/300?random=2"><span>City</span></div>
+<div class="card" data-category="animal"><img src="https://picsum.photos/400/300?random=3"><span>Animal</span></div>
+<div class="card" data-category="nature"><img src="https://picsum.photos/400/300?random=4"><span>Forest</span></div>
+<div class="card" data-category="city"><img src="https://picsum.photos/400/300?random=5"><span>Skyline</span></div>
+<div class="card" data-category="animal"><img src="https://picsum.photos/400/300?random=6"><span>Wildlife</span></div>
+</main>
+
+<div id="lightbox" class="hidden">
+<button id="close">✖</button>
+<button id="prev">❮</button>
+<img id="lightImg">
+<button id="next">❯</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
